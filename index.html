@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta
+      name="description"
+      content="콘텐츠 기획과 영상 편집부터 썸네일 제작, 제작 협업과 유튜브 채널 운영까지 경험한 영상 콘텐츠 실무자의 포트폴리오"
+    />
+    <title>홍재용 · 영상 콘텐츠 포트폴리오</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#projects">프로젝트 목록으로 건너뛰기</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="첫 화면으로 이동">HONG JAEYONG <span>／</span> PORTFOLIO</a>
+      <nav aria-label="주요 메뉴">
+        <a href="#projects">Projects</a>
+        <a href="#approach">Expertise</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow">VIDEO EDITING · CONTENT PLANNING · CHANNEL OPERATIONS</p>
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <h1>
+              기획을 영상으로,<br />
+              메시지를 <em>장면으로.</em>
+            </h1>
+            <div class="hero-bottom">
+              <p>
+                콘텐츠 기획과 영상 편집부터 썸네일 제작, 외주 제작 협업, 유튜브 채널 운영까지.<br />
+                콘텐츠의 방향을 정하고, 실제 결과물로 완성하는 일을 해왔습니다.
+              </p>
+              <a class="text-link" href="#projects">전체 작업 보기 <span aria-hidden="true">↓</span></a>
+            </div>
+          </div>
+
+          <aside class="hero-selected" aria-label="대표 작업 5편">
+            <div class="hero-selected-heading">
+              <span>SELECTED WORK / 05</span>
+              <span>HOVER TO EXPLORE</span>
+            </div>
+            <button class="hero-selected-stage has-preview" type="button" data-hero-open="11" aria-label="Cosmic Trail 상세 보기">
+              <img id="heroSelectedImage" src="assets/motion-cosmic.jpg" alt="Cosmic Trail 모션그래픽 장면" />
+              <video id="heroSelectedPreview" class="hero-selected-preview" muted loop playsinline preload="none" aria-hidden="true"></video>
+              <span class="hero-preview-label" aria-hidden="true">HOVER PREVIEW · MUTED</span>
+              <span class="hero-selected-meta">
+                <small id="heroSelectedBadge">MOTION GRAPHICS</small>
+                <strong id="heroSelectedTitle">Cosmic Trail</strong>
+                <i aria-hidden="true">↗</i>
+              </span>
+            </button>
+            <ol class="hero-selected-list">
+              <li><button class="is-active" type="button" data-hero-project="11"><span>01</span><b>Cosmic Trail</b><small>MOTION GRAPHICS</small></button></li>
+              <li><button type="button" data-hero-project="13"><span>02</span><b>현대카드 MX Black Edition</b><small>MOTION GRAPHICS</small></button></li>
+              <li><button type="button" data-hero-project="work-04"><span>03</span><b>더바른치과 인터뷰</b><small>INTERVIEW</small></button></li>
+              <li><button type="button" data-hero-project="work-22"><span>04</span><b>브이모먼트 브랜드 영상</b><small>BRAND FILM</small></button></li>
+              <li><button type="button" data-hero-project="work-01"><span>05</span><b>HeyGen AI 영상</b><small>AI VIDEO</small></button></li>
+            </ol>
+          </aside>
+        </div>
+      </section>
+
+      <section class="credibility" aria-label="포트폴리오 안내">
+        <p class="section-number">01 / ABOUT</p>
+        <div>
+          <h2>아이디어를 콘텐츠로,<br />콘텐츠를 결과물로.</h2>
+          <p>
+            좋은 콘텐츠는 무엇을 보여줄지 고민하는 것에서 시작한다고 생각합니다.
+          </p>
+          <p>
+            의료·브랜드 영상의 편집을 직접 수행하고, 유튜브 채널에서는 주제 선정과 콘텐츠 구성,
+            썸네일 기획·제작, 외주 편집자와의 협업 및 채널 운영을 담당했습니다.
+          </p>
+          <p>
+            기획 의도가 실제 영상에 반영되도록 제작 과정을 연결하고,
+            시청자에게 메시지를 전달하는 방식을 고민해 왔습니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">02 / SELECTED WORK</p>
+            <h2>프로젝트</h2>
+          </div>
+          <p class="project-count" aria-live="polite"><span id="projectCount">0</span> projects</p>
+        </div>
+
+        <div class="filters" aria-label="프로젝트 역할 필터">
+          <button class="filter is-active" type="button" data-filter="editing" aria-pressed="true">직접 편집</button>
+          <button class="filter" type="button" data-filter="planning">기획 · 채널 운영</button>
+          <button class="filter" type="button" data-filter="motion">개인 모션그래픽</button>
+        </div>
+
+        <div id="editingSubcategories" class="editing-subcategories" aria-label="직접 편집 분야"></div>
+        <select id="formatFilter" hidden aria-label="콘텐츠 형식"><option value="all">모든 편집 작업</option></select>
+        <details class="title-settings">
+          <summary>제목 관리</summary>
+          <p>카드를 열어 제목을 수정하면 로컬 사이트 파일에도 저장됩니다. 이전에 이 브라우저에서만 바꾼 제목은 ‘현재 제목을 사이트에 반영’을 누르세요. 공유 사이트는 반영 후 다시 배포해야 갱신됩니다.</p>
+          <label><input id="editTitles" type="checkbox"> 제목 수정 모드</label>
+          <button id="exportTitles" type="button">제목 백업 저장</button>
+          <button id="applyTitles" type="button">현재 제목을 사이트에 반영</button>
+          <label class="import-label">백업 불러오기<input id="importTitles" type="file" accept=".json,application/json"></label>
+          <p id="titleStatus" role="status" aria-live="polite"></p>
+        </details>
+        <div class="project-grid" id="projectGrid"></div>
+      </section>
+
+      <section class="approach" id="approach">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">03 / EXPERTISE</p>
+            <h2>하나의 콘텐츠를 만드는<br />다양한 경험.</h2>
+          </div>
+        </div>
+        <div class="approach-grid">
+          <article>
+            <span>01 — VIDEO EDITING</span>
+            <h3>영상 편집 · 제작</h3>
+            <p>홍보 영상, 인터뷰, 정보 전달 콘텐츠 등을 직접 편집했습니다. 영상의 목적과 메시지에 맞춰 장면의 흐름을 구성하고, 자막과 시각적 요소로 콘텐츠를 완성했습니다.</p>
+          </article>
+          <article>
+            <span>02 — CONTENT &amp; CHANNEL</span>
+            <h3>콘텐츠 기획 · 채널 운영</h3>
+            <p>유튜브 콘텐츠의 주제와 구성, 썸네일을 기획·제작하고 채널 운영을 담당했습니다. 외주 편집자에게 제작 방향을 전달하고, 피드백을 주고받으며 결과물을 완성했습니다.</p>
+          </article>
+          <article>
+            <span>03 — MOTION GRAPHICS</span>
+            <h3>모션그래픽 · 개인 작업</h3>
+            <p>기획부터 디자인, 모션그래픽과 최종 편집까지 직접 제작했습니다. 개인 프로젝트를 통해 움직임과 타이포그래피, 시각적 연출을 활용한 영상 표현을 시도했습니다.</p>
+          </article>
+        </div>
+        <article class="ai-capability">
+          <p class="eyebrow">AI VIDEO PRODUCTION / HEYGEN</p>
+          <h3>AI 도구로 확장하는 영상 제작</h3>
+          <p>HeyGen을 활용한 ‘1분 안에 말아주는 대장내시경’ 영상입니다. AI 아바타를 활용해 의료 정보를 전달하는 롱폼·숏폼 결과물을 직접 제작했습니다.</p>
+          <a class="text-link" href="#projects" data-open-project="work-01">HeyGen 제작 사례 보기 ↗</a>
+        </article>
+      </section>
+
+      <section class="disclosure">
+        <p class="section-number">04 / WORK SCOPE</p>
+        <div>
+          <h2>역할은 달라도,<br />콘텐츠의 목적에서 시작했습니다.</h2>
+          <p>직접 편집한 영상과 콘텐츠 기획·채널 운영 작업을 실제 담당 범위에 따라 구분했습니다.
+          무엇을 전달할지 정하고, 제작 과정의 여러 역할을 연결해 결과물로 완성한 경험을 담았습니다.</p>
+          <p class="viewing-note">영상은 원본을 수정하지 않은 웹 열람용 압축본입니다. 오디오가 있는 작업은 소리와 함께 재생됩니다.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <p class="section-number">05 / CONTACT</p>
+      <h2>다음 콘텐츠를<br />함께 만들어가고 싶습니다.</h2>
+      <p class="contact-intro">영상 편집부터 콘텐츠 기획까지, 경험을 바탕으로 새로운 프로젝트에 기여하겠습니다.</p>
+      <div class="contact-row">
+        <span class="contact-name">홍재용 <small>VIDEO CONTENT CREATOR</small></span>
+        <div class="contact-links">
+          <a href="tel:+821058865404" aria-label="홍재용에게 전화하기">010-5886-5404</a>
+          <a href="mailto:wodyd00305@naver.com" aria-label="홍재용에게 이메일 보내기">wodyd00305@naver.com</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="project-dialog" id="projectDialog" aria-labelledby="dialogTitle">
+      <button class="dialog-close" type="button" aria-label="상세 닫기">×</button>
+      <div id="dialogContent"></div>
+    </dialog>
+
+    <template id="projectTemplate">
+      <article class="project-card">
+        <button class="card-open" type="button">
+          <div class="card-visual">
+            <img class="video-thumb" alt="" loading="lazy" />
+            <div class="visual-content">
+              <span class="card-index"></span>
+              <span class="play-mark" aria-hidden="true">↗</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <span class="role-label"></span>
+            <h3></h3>
+            <p class="card-format"></p>
+          </div>
+        </button>
+      </article>
+    </template>
+
+    <script src="assets/catalog.js"></script>
+    <script src="assets/planning-videos.js"></script>
+    <script src="assets/titles.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

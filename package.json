@@ -1,0 +1,13 @@
+{
+  "name": "jaeyong-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs",
+    "validate": "node validate-build.mjs",
+    "check": "npm run build && npm run validate"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
