@@ -603,7 +603,7 @@ if('IntersectionObserver' in window && !reducedMotion.matches){
       }
     });
   },{threshold:0.08,rootMargin:'0px 0px -20px 0px'});
-  document.querySelectorAll('.hero .eyebrow,.hero-copy,.hero-selected,.credibility>div,.section-heading,.approach-grid article,.approach>.ai-capability,.disclosure>div,footer h2,.contact-intro').forEach((element,i)=>{
+  document.querySelectorAll('.hero .eyebrow,.hero-copy,.hero-selected,.credibility>div,.feedback-heading,.feedback-card,.section-heading,.approach-grid article,.approach>.ai-capability,.disclosure>div,footer h2,.contact-intro').forEach((element,i)=>{
     element.classList.add('scroll-reveal');
     element.style.setProperty('--reveal-delay',`${Math.min(i%3,2)*65}ms`);
     revealObserver.observe(element);
