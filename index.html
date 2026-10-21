@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=feedback-2" />
+    <link rel="stylesheet" href="styles.css?v=structure-1" />
   </head>
   <body>
     <a class="skip-link" href="#projects">프로젝트 목록으로 건너뛰기</a>
@@ -91,59 +91,13 @@
         </div>
       </section>
 
-      <section class="feedback-section" aria-labelledby="feedbackTitle">
-        <div class="feedback-heading">
-          <div>
-            <p class="section-number">02 / FEEDBACK</p>
-            <h2 id="feedbackTitle">함께 일한 사람들이<br />남긴 말.</h2>
-          </div>
-          <p>실제 업무 대화에서 작업에 관한 문장만 발췌했습니다.<br />말투는 그대로, 이름과 대화 상대의 정보는 덜어냈습니다.</p>
-        </div>
-        <div class="feedback-grid">
-          <article class="feedback-card">
-            <div class="feedback-card-top">
-              <span>01 / CLIENT MESSAGE</span>
-              <strong>콘텐츠의 재미와 전달력</strong>
-            </div>
-            <div class="feedback-card-body">
-              <span class="feedback-source">실제 메시지에서 발췌</span>
-              <blockquote>네! 재밌게잘만들어주셔서 조회수가잘나와 좋습니다. 감사합니다☺</blockquote>
-              <p>청담란셀의원 콘텐츠 · 의료진 피드백</p>
-            </div>
-          </article>
-          <article class="feedback-card">
-            <div class="feedback-card-top">
-              <span>02 / CLIENT MESSAGE</span>
-              <strong>자연스러운 인터뷰 편집</strong>
-            </div>
-            <div class="feedback-card-body">
-              <span class="feedback-source">실제 메시지에서 발췌</span>
-              <blockquote>인터뷰 영상은 이대로 가면 좋을 것 같아요 ㅎㅎ 훨씬 자연스럽고 좋네요 ㅎㅎ</blockquote>
-              <p>용인성모내과 인터뷰 · 의료진 피드백</p>
-            </div>
-          </article>
-          <article class="feedback-card">
-            <div class="feedback-card-top">
-              <span>03 / TEAM MESSAGE</span>
-              <strong>AI 영상의 어색함을 줄인 시도</strong>
-            </div>
-            <div class="feedback-card-body">
-              <span class="feedback-source">실제 메시지에서 발췌</span>
-              <blockquote>오오 이렇게하니까 AI 어색함도 덜 티나고 내용도 너무 좋은 것 같은데요!! 아이디어 완전 짱입니다 ㅎㅎ 👍</blockquote>
-              <p>HeyGen 쇼츠 · 팀 내부 피드백</p>
-            </div>
-          </article>
-        </div>
-        <p class="feedback-note">문장은 원본 대화의 일부를 그대로 옮겼습니다. 이름·프로필·내부 링크가 담긴 원본 캡처는 공개하지 않습니다. 조회수에 관한 표현은 피드백 작성자의 의견이며 별도 성과 지표로 제시하지 않습니다.</p>
-      </section>
-
       <section class="projects-section" id="projects">
         <div class="section-heading">
           <div>
-            <p class="section-number">03 / SELECTED WORK</p>
+            <p class="section-number">02 / SELECTED WORK</p>
             <h2>프로젝트</h2>
           </div>
-          <p class="project-count" aria-live="polite"><span id="projectCount">0</span> projects</p>
+          <p class="project-count" aria-live="polite"><span id="projectCount">34</span> projects</p>
         </div>
 
         <div class="filters" aria-label="프로젝트 역할 필터">
@@ -154,7 +108,7 @@
 
         <div id="editingSubcategories" class="editing-subcategories" aria-label="직접 편집 분야"></div>
         <select id="formatFilter" hidden aria-label="콘텐츠 형식"><option value="all">모든 편집 작업</option></select>
-        <details class="title-settings">
+        <details class="title-settings" hidden>
           <summary>제목 관리</summary>
           <p>카드를 열어 제목을 수정하면 로컬 사이트 파일에도 저장됩니다. 이전에 이 브라우저에서만 바꾼 제목은 ‘현재 제목을 사이트에 반영’을 누르세요. 공유 사이트는 반영 후 다시 배포해야 갱신됩니다.</p>
           <label><input id="editTitles" type="checkbox"> 제목 수정 모드</label>
@@ -164,6 +118,56 @@
           <p id="titleStatus" role="status" aria-live="polite"></p>
         </details>
         <div class="project-grid" id="projectGrid"></div>
+        <p class="project-viewing-note">영상은 웹 열람을 위해 압축한 사본입니다. 오디오가 있는 작업은 소리와 함께 재생됩니다.</p>
+      </section>
+
+      <section class="feedback-section" aria-labelledby="feedbackTitle">
+        <div class="feedback-heading">
+          <div>
+            <p class="section-number">03 / CLIENT &amp; TEAM FEEDBACK</p>
+            <h2 id="feedbackTitle">결과물에 대한<br />피드백.</h2>
+          </div>
+          <p>실제 프로젝트에서 의료진과 동료에게 받은 의견입니다.<br />작업물과 함께 확인할 수 있도록 연결했습니다.</p>
+        </div>
+        <div class="feedback-grid">
+          <article class="feedback-card">
+            <div class="feedback-card-top">
+              <span>01 / CLIENT MESSAGE</span>
+              <strong>콘텐츠의 재미와 전달력</strong>
+            </div>
+            <div class="feedback-card-body">
+              <span class="feedback-source">청담란셀의원 · 의료진</span>
+              <blockquote>네! 재밌게잘만들어주셔서 조회수가잘나와 좋습니다. 감사합니다☺</blockquote>
+              <p>콘텐츠의 재미와 시청 반응에 관해 전해 준 의견입니다.</p>
+              <a class="feedback-link" href="#projects" data-open-project="10">관련 기획 작업 보기 <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="feedback-card">
+            <div class="feedback-card-top">
+              <span>02 / CLIENT MESSAGE</span>
+              <strong>자연스러운 인터뷰 편집</strong>
+            </div>
+            <div class="feedback-card-body">
+              <span class="feedback-source">용인성모내과 · 의료진</span>
+              <blockquote>인터뷰 영상은 이대로 가면 좋을 것 같아요 ㅎㅎ 훨씬 자연스럽고 좋네요 ㅎㅎ</blockquote>
+              <p>인터뷰의 자연스러운 흐름에 대한 평가입니다.</p>
+              <a class="feedback-link" href="#projects" data-open-project="work-30">관련 인터뷰 영상 보기 <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="feedback-card">
+            <div class="feedback-card-top">
+              <span>03 / TEAM MESSAGE</span>
+              <strong>AI 영상 표현의 개선</strong>
+            </div>
+            <div class="feedback-card-body">
+              <span class="feedback-source">HeyGen 쇼츠 · 내부 협업자</span>
+              <blockquote>오오 이렇게하니까 AI 어색함도 덜 티나고 내용도 너무 좋은 것 같은데요!! 아이디어 완전 짱입니다 ㅎㅎ 👍</blockquote>
+              <p>AI 표현의 어색함을 줄인 제작 아이디어에 대한 의견입니다.</p>
+              <a class="feedback-link" href="#projects" data-open-project="work-02">관련 AI 영상 보기 <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="feedback-note">문장은 원본 대화의 일부를 그대로 옮겼습니다. 이름·프로필·내부 링크가 담긴 원본 캡처는 공개하지 않습니다. 조회수에 관한 표현은 피드백 작성자의 의견이며 별도 성과 지표로 제시하지 않습니다.</p>
       </section>
 
       <section class="approach" id="approach">
@@ -198,13 +202,16 @@
         </article>
       </section>
 
-      <section class="disclosure">
-        <p class="section-number">05 / WORK SCOPE</p>
+      <section class="disclosure" aria-labelledby="workProcessTitle">
+        <p class="section-number">05 / WORK PROCESS</p>
         <div>
-          <h2>역할은 달라도,<br />콘텐츠의 목적에서 시작했습니다.</h2>
-          <p>직접 편집한 영상과 콘텐츠 기획·채널 운영 작업을 실제 담당 범위에 따라 구분했습니다.
-          무엇을 전달할지 정하고, 제작 과정의 여러 역할을 연결해 결과물로 완성한 경험을 담았습니다.</p>
-          <p class="viewing-note">영상은 원본을 수정하지 않은 웹 열람용 압축본입니다. 오디오가 있는 작업은 소리와 함께 재생됩니다.</p>
+          <h2 id="workProcessTitle">아이디어에서<br />결과물까지.</h2>
+          <p class="work-process-intro">프로젝트마다 맡은 단계는 달랐습니다. 아래는 실무에서 직접 수행한 업무를 콘텐츠의 흐름에 따라 정리한 것입니다.</p>
+          <ol class="work-flow">
+            <li><span>01 / PLAN</span><div><h3>방향을 정하고</h3><p>유튜브 콘텐츠의 주제와 구성, 썸네일 방향을 기획했습니다.</p></div></li>
+            <li><span>02 / MAKE</span><div><h3>제작을 연결하고</h3><p>영상을 직접 편집하거나 외주 편집자에게 제작 방향을 전달하고 피드백을 정리했습니다.</p></div></li>
+            <li><span>03 / OPERATE</span><div><h3>채널에서 이어갔습니다</h3><p>제목·썸네일을 준비하고 유튜브 채널 운영 업무를 담당했습니다.</p></div></li>
+          </ol>
         </div>
       </section>
     </main>
@@ -249,6 +256,6 @@
     <script src="assets/catalog.js"></script>
     <script src="assets/planning-videos.js"></script>
     <script src="assets/titles.js"></script>
-    <script src="script.js?v=feedback-1"></script>
+    <script src="script.js?v=structure-1"></script>
   </body>
 </html>

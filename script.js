@@ -371,7 +371,7 @@ const titleKey='portfolio-title-overrides-v1';
 const localEditor=['127.0.0.1','localhost'].includes(location.hostname);
 let titleOverrides={...sharedTitles};
 try { const saved=JSON.parse(localStorage.getItem(titleKey)||'{}'); if(localEditor && saved && typeof saved==='object' && !Array.isArray(saved)) titleOverrides={...saved,...sharedTitles}; } catch {}
-if(!localEditor)document.querySelector('.title-settings').hidden=true;
+if(localEditor)document.querySelector('.title-settings').hidden=false;
 async function persistTitles(titles){
   const response=await fetch('/api/titles',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(titles)});
   if(!response.ok)throw Error('사이트 파일 저장 실패. 로컬 서버를 다시 실행해 주세요.');
