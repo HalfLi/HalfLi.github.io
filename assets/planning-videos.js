@@ -21,22 +21,25 @@ const planningSelections = {
   ],
   "10": [
     {
-      "id": "evHFqTuTEls",
-      "title": "퀭한 눈, 피곤해 보이는 인상.. 원인은 '아이홀'에 있습니다!",
-      "published": "2025-12-12",
-      "metadata_checked": "2026-10-20"
+      "id": "mzUbMS8eapI",
+      "title": "가성비 끝판왕? 피부과 원장님이 추천하는 다이소 화장품!",
+      "published": "2025-09-12",
+      "views": 46602,
+      "metadata_checked": "2026-10-21"
     },
     {
-      "id": "MHZ1Ifmfc8k",
-      "title": "여드름 흉터, 도대체 어떻게 없애야 할까? (feat. 서브시전 & 쥬베룩 스킨)",
-      "published": "2025-09-26",
-      "metadata_checked": "2026-10-20"
+      "id": "ZR-vbUm2VoM",
+      "title": "여드름 치료, 원인을 모르면 절대 안 끝납니다🔥 재발성·광범위 여드름 원인과 해결책",
+      "published": "2025-09-19",
+      "views": 19839,
+      "metadata_checked": "2026-10-21"
     },
     {
-      "id": "NXsxz5U4PSI",
-      "title": "20대 30대 40대, 나이별 '돈값' 하는 스킨부스터 총정리",
-      "published": "2025-12-05",
-      "metadata_checked": "2026-10-20"
+      "id": "lOZ4r_p6LII",
+      "title": "피코토닝 vs 피코슈어, 대체 뭐가 더 좋음? 속 시원한 비교와 오해 풀기!",
+      "published": "2025-05-29",
+      "views": 15476,
+      "metadata_checked": "2026-10-21"
     }
   ],
   "plan-1": [

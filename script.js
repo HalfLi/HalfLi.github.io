@@ -214,9 +214,9 @@ hanyang.note='5편 모두 퇴사 전 기획 참여 작업입니다. 게시일은
 hanyang.period='2026년 1월 26일 퇴사 전 작업 · 일부 영상은 퇴사 후 게시';
 projects.filter(p=>p.category==='planning' && p.id!=='plan-7').forEach(p=>{
   const selected=planningSelections[p.id]||[];
-  p.selectedVideos=selected.map(v=>[v.id,v.title,v.published]);
+  p.selectedVideos=selected.map(v=>[v.id,v.title,v.published,v.views,v.metadata_checked]);
   if(selected.length){p.videoId=selected[0].id;delete p.image;}
-  p.selectionNote=['10','plan-3'].includes(p.id)?'2026년 1월 26일 이전 게시물 중 공개 조회수 순으로 선정 · 조회수 확인일 2026년 10월 20일. 현재 조회수는 재직 당시 성과를 의미하지 않습니다.':['plan-2','plan-4'].includes(p.id)?'직접 지정한 대표 영상 · 게시일 확인 완료.':p.id==='plan-5'?'2026년 1월 23일 이전 게시물에서 선정.':'게시일과 콘텐츠 주제를 기준으로 선정.';
+  p.selectionNote=p.id==='10'?'직접 기획·운영을 담당한 콘텐츠 중 현재 공개 조회수 순으로 선정했습니다. 조회수는 2026년 10월 21일 확인한 누적 수치입니다.':p.id==='plan-3'?'2026년 1월 26일 이전 게시물 중 공개 조회수 순으로 선정 · 조회수 확인일 2026년 10월 20일. 현재 조회수는 재직 당시 성과를 의미하지 않습니다.':['plan-2','plan-4'].includes(p.id)?'직접 지정한 대표 영상 · 게시일 확인 완료.':p.id==='plan-5'?'2026년 1월 23일 이전 게시물에서 선정.':'게시일과 콘텐츠 주제를 기준으로 선정.';
 });
 const orchid=projects.find(p=>p.id==='plan-1');
 orchid.period='담당 영상 게시 범위: 2025년 9월 19일~10월 14일';
@@ -260,7 +260,8 @@ projects.filter(p=>p.category==='editing').forEach(p=>{
 });
 projects.filter(p=>p.category==='planning').forEach(p=>{
   p.summary=`${p.title}의 콘텐츠와 채널 비주얼을 기획하고, 썸네일 기획·제작 및 채널 관리를 담당했습니다.`;
-  p.note='';p.selectionNote='';
+  p.note='';
+  if(p.id!=='10')p.selectionNote='';
 });
 const grid = document.querySelector("#projectGrid");
 const cardDescriptions={
@@ -444,7 +445,7 @@ function openProject(project) {
       ${project.aiCapability?`<section class="ai-capability"><span>AI VIDEO PRODUCTION</span><h3>HeyGen을 활용한 AI 영상 제작</h3><p>${project.aiCapability}</p></section>`:''}
       ${project.videoUrl ? `<a class="video-link" href="${project.videoUrl}" target="_blank" rel="noreferrer">YouTube에서 영상 보기 ↗</a>` : ""}
       ${project.channelUrl?`<a class="video-link" href="${project.channelUrl}" target="_blank" rel="noopener noreferrer">YouTube 채널 보기 ↗</a>`:''}
-      ${project.selectedVideos?`<section class="selected-videos"><h3>대표 기획 영상</h3>${project.selectionNote?`<p>${project.selectionNote}</p>`:''}${project.selectedVideos.map(([id,title,date])=>`<a href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy"><span>${escapeHtml(title)} ↗${date?`<small class="video-date">게시일 ${date}</small>`:''}</span></a>`).join('')}</section>`:''}
+      ${project.selectedVideos?`<section class="selected-videos"><h3>대표 기획 영상</h3>${project.selectionNote?`<p>${escapeHtml(project.selectionNote)}</p>`:''}${project.selectedVideos.map(([id,title,date,views,checked])=>`<a href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy"><span>${escapeHtml(title)} ↗${date?`<small class="video-date">게시일 ${escapeHtml(date)}</small>`:''}${views?`<small class="video-views">공개 조회수 ${Number(views).toLocaleString('ko-KR')}회 · ${escapeHtml(checked)} 확인</small>`:''}</span></a>`).join('')}</section>`:''}
     </div>`;
   dialog.showModal();
   const form=dialog.querySelector('.title-editor');
