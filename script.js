@@ -251,9 +251,11 @@ const displayTitles={
 };
 projects.filter(p=>p.category==='editing').forEach(p=>{
   p.title=displayTitles[p.id]||p.title;
+  p.role='편집 작업';
+  p.contribution='편집·후반작업';
   p.note=p.complete?(p.audio?'전체 영상 · 오디오 포함':'전체 영상 · 원본 오디오 없음'):'';
   if(['work-01','work-02'].includes(p.id)){
-    p.tool='HeyGen';p.role='HeyGen · AI 영상 제작';p.contribution='AI 도구를 활용한 영상 제작 · 직접 작업 100%';
+    p.tool='HeyGen';p.contribution='HeyGen 활용 · AI 영상 기획·제작';
     p.summary='‘1분 안에 말아주는 대장내시경’은 HeyGen을 활용한 AI 영상입니다. 대장내시경 정보를 전달하는 콘텐츠를 롱폼과 숏폼 두 형식으로 직접 제작했습니다.';
     p.aiCapability='AI 아바타를 활용한 정보 전달형 영상 제작 역량을 보여주는 작업입니다.';
   }
@@ -488,7 +490,7 @@ function selectFormat(value){
   const button=document.createElement('button');button.type='button';button.dataset.format=value;button.textContent=label;button.setAttribute('aria-pressed',String(value==='all'));button.addEventListener('click',()=>selectFormat(value));subcategories.append(button);
 });
 formatSelect.addEventListener('change',()=>filterProjects(document.querySelector('.filter.is-active').dataset.filter));
-filterProjects("editing");
+filterProjects("planning");
 
 filters.forEach((filterButton) => {
   filterButton.addEventListener("click", () => {
